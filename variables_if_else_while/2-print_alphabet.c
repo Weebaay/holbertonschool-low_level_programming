@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main imprime l'alphabet en minuscules suivi d'une nouvelle ligne
+ * main - imprime l'alphabet en minuscules suivi d'une nouvelle ligne
  * Return: Toujours 0
  */
 int main(void)
