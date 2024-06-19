@@ -9,11 +9,17 @@
 
 int main(void)
 {
-char base_seize[] = "0123456789abcdef";
+char digit;
+char letter;
 
-for (int i = 0; i < 16; i++)
-putchar(base_seize[i]);
-
+for (digit = 0; digit <= 9; digit++)
+{
+putchar(digit + '0');
+}
+for (letter = 'a'; letter <= 'f'; letter++)
+{
+putchar(letter);
+}
 putchar('\n');
 return (0);
 }
