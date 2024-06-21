@@ -2,7 +2,8 @@
 
 /**
 *add - function adds two integers
-*
+*@c: adds
+*@d: adds2
 *
 *Return: the result.
 */
