@@ -1,3 +1,7 @@
 *main.c
 **test/
 _putchar.c
+*.o
+*.exe
+*.out
+*.bin
