@@ -4,6 +4,7 @@
 * *_strncat - function that concatenates two string
 *@dest: string of destination
 *@src: string of source
+*@n: maximum number of octers to copy
 *
 *Return: dest
 */
