@@ -5,7 +5,7 @@
 *@haystack: is the string
 *@needle: is a substring
 *
-*Return : string haystack
+*Return: string haystack
 */
 char *_strstr(char *haystack, char *needle)
 {
