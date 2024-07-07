@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 
 		for (j = 0; ag[j] != '\0'; j++)
 		{
-			if (!isdigit(ag[j]))
+			if (ag[j] < '0' || ag[j] > '9')
 			{
 				printf("Error\n");
 				return (1);
