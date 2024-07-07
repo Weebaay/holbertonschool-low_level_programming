@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
 *main - that adds positive number
 *@argc: argument count
@@ -22,6 +23,7 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		char *ag = argv[i];
+		int number = 0;
 
 		for (j = 0; ag[j] != '\0'; j++)
 		{
@@ -30,9 +32,10 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
+			number = number * 10 + (ag[j] - '0');
 		}
 
-		sum += atoi(ag);
+		sum += number;
 	}
 
 	printf("%d\n", sum);
