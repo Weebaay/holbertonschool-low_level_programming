@@ -9,6 +9,18 @@
 *Return: pointers
 */
 
+int _strlen(char *s)
+{
+	int taille = 0;
+
+	while (*s != '\0')
+	{
+		taille++;
+		s++;
+	}
+	return (taille);
+}
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int len1, len2, total;
