@@ -39,21 +39,18 @@ char *_strdup(const char *str)
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *one_node;
-	char *new_str;
+	list_t *one_node = (list_t *)malloc(sizeof(list_t));
 
-	one_node = malloc(sizeof(list_t));
 	if (one_node == NULL)
 	{
 		return (NULL);
 	}
-	new_str = _strdup(str);
-	if (new_str == NULL)
+	one_node->str = _strdup(str);
+	if (one_node->str == NULL)
 	{
 		free(one_node);
 		return (NULL);
 	}
-	one_node->str = new_str;
 	one_node->next = *head;
 	*head = one_node;
 
